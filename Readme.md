@@ -1,11 +1,11 @@
 # AWS에서 실행 방법
-##1. 사전준비
+## 1. 사전준비
 1. [키페어 생성하기](./doc/create_keypair.pdf)
 1. [보안그룹 생성하기](./doc/create_security_group.pdf)
 2. [**AWS**에서 (Linux) 인스턴스 시작](./doc/launch_instance.md)
 3. [(Linux) 인스턴스 연결](./doc/connectingToInstance.pdf)
 
-##2. NodeJS 설치
+## 2. NodeJS 설치
 Package Manager를 통한 NodeJS 설치
 
 - https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-basedlinux-distributions
@@ -18,7 +18,7 @@ Package Manager를 통한 NodeJS 설치
 ```
 [ubuntu ~]$ sudo apt-get install -y nodejs
 ```
-##3. MongDB 설치
+## 3. MongDB 설치
 Install MongoDB Community Edition on Ubuntu
 
 - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
@@ -55,7 +55,7 @@ Install MongoDB Community Edition on Ubuntu
 	[ubuntu ~]$ sudo service mongod start
 	```
 
-##4. APP 다운로드 및 실행
+## 4. APP 다운로드 및 실행
 1. GitHub 저장소에서 App 다운로드
 
 ```
@@ -66,5 +66,4 @@ Install MongoDB Community Edition on Ubuntu
 
 ```
 [ubuntu ~]$ cd NodeJSServer
-
 ```
