@@ -10,15 +10,14 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var server = app.listen(3000,function() {
-    console.log("Express server has started on port 3000");
+var server = app.listen(80,function() {
+    console.log("Express server has started on port 80");
 })
 
 app.locals.pretty = true;
 
 
 app.get('/get-data', function(req, res) {
-     console.log("\n\n get req="+req);
   Book.find(function(err, books){
         if(err) return res.status(500).send({error: 'database failure'});
         res.send(books);
